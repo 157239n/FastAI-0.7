@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+    fastai_old:
+        image: 157239n/fastai-old
+        container_name: fastai_old
+        restart: always
+        volumes:
+            - /home:/hostHome
+        ports:
+            - 5000:8888
